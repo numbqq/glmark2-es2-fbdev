@@ -11,3 +11,10 @@ $ ./waf
 To install use:
 
 $ ./waf install --destdir=DESTDIR
+
+Build for mali fbdev:
+
+$ ./waf configure --with-flavors=fbdev-glesv2 --data-path=$(pwd)/data
+$ ./waf
+$ ./build/src/glmark2-es2
+
