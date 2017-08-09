@@ -20,7 +20,7 @@ FLAVORS = {
     'mir-glesv2' : 'glmark2-es2-mir',
     'wayland-gl' : 'glmark2-wayland',
     'wayland-glesv2' : 'glmark2-es2-wayland',
-    'fbdev-glesv2' : 'glmark2-es2'
+    'fbdev-glesv2' : 'glmark2-es2-fbdev'
 }
 FLAVORS_STR = ", ".join(FLAVORS.keys())
 
