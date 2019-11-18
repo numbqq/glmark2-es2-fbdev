@@ -18,7 +18,7 @@ Package: glmark2-es2-fbdev
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         glmark2-data (= ${source:Version})
+         glmark2-data (>= ${source:Version})
 Description: OpenGL ES 2.0 fbdev benchmark
  A benchmark for OpenGL (ES) 2.0 that uses only the OpenGL ES 2.0 compatible
  API. It contains tests for standard OpenGL (ES) 2.0 features, such as vertex

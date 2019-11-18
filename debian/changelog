@@ -1,3 +1,9 @@
+glmark2 (2012.12-0ubuntu4) utopic; urgency=medium
+
+  * change glmark2-data depends version
+
+ -- Nick Xie <nick@khadas.com>  Mon, 18 Nov 2019 15:05:01 +0800
+
 glmark2 (2012.12-0ubuntu3) utopic; urgency=medium
 
   * add glmark2-es2-fbdev
