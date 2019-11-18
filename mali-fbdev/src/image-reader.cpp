@@ -22,7 +22,7 @@
 #include <png.h>
 #include <jpeglib.h>
 #include <memory>
-
+#include <cstring>
 #include "image-reader.h"
 #include "log.h"
 #include "util.h"
@@ -119,7 +119,7 @@ PNGReader::init(const std::string& filename)
 
     Log::debug("Reading PNG file %s\n", filename.c_str());
 
-    const std::auto_ptr<std::istream> is_ptr(Util::get_resource(filename));
+    const std::unique_ptr<std::istream> is_ptr(Util::get_resource(filename));
     if (!(*is_ptr)) {
         Log::error("Cannot open file %s!\n", filename.c_str());
         return false;
