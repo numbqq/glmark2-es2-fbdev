@@ -18,3 +18,6 @@ $ ./waf configure --with-flavors=fbdev-glesv2 --data-path=$(pwd)/data
 $ ./waf
 $ ./build/src/glmark2-es2-fbdev
 
+Build deb package
+
+$ dpkg-buildpackage -b -us -uc
